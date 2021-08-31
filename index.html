@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="UI/UX Design Portfolio">
+  <meta name="keywords" content="Design, UX, UI, Designer, Web, Graphic">
+  <meta name="author" content="Luigi Battista">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,400;0,600;0,700;0,800;0,900;1,200;1,400;1,600;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style/main.css" media="screen" />
+</head>
+
+<body>
+
+  <nav role="navigation">
+    <div id="menuToggle">
+      <input type="checkbox" />
+      <span></span>
+      <span></span>
+      <span></span>
+      <ul id="menu">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+    <a href="/index.html"><img src="media/logo/logo-black-small.png" id="nav-logo" /></a>
+  </nav>
+
+  <div id="arrow-wrapper">
+    <div id="arrow-wrapper-inner">
+      <div id="scroll-down">
+        <span class="arrow-down">
+          <!-- css generated icon -->
+        </span>
+        <span id="scroll-title">
+          Scroll down
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section id="index-hero">
+      <h1>Hello.</h1>
+    </section>
+
+    <section id="index-intro" class="container">
+      <p>
+        <span class="gray-text">My name is</span><br />Luigi Battista<span class="gray-text">,<br />and I am a</span><br />UI/UX Designer<span class="gray-text">.<br /><br />Here's my proof.</span>
+      </p>
+    </section>
+
+    <section id="index-gallery">
+      <div class="card-gallery container">
+
+        <div class="card">
+          <a href="/hartaudiocables.html">
+            <div class="flex-container">
+              <img src="https://cdn.shopify.com/s/files/1/0106/8253/1921/collections/01_Thumbnail.png?v=1586293575" class="card-img" alt="project picture">
+              <span class="card-title">Hart Audio Cables</span>
+              <span class="card-description">UI/UX Design Concept</span>
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="card-gallery-mobile">
+        <div class="card-gallery-inner">
+
+          <div class="card">
+            <a href="/hartaudiocables.html">
+              <div class="flex-container">
+                <img src="https://www.pyleaudio.com/1000/PPJJ15.jpg" class="card-img" alt="project picture">
+                <span class="card-title">Hart Audio Cables</span>
+                <span class="card-description">UI/UX Design Concept</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a href="/hartaudiocables.html">
+              <div class="flex-container">
+                <img src="https://www.pyleaudio.com/1000/PPJJ15.jpg" class="card-img" alt="project picture">
+                <span class="card-title">Hart Audio Cables</span>
+                <span class="card-description">UI/UX Design Concept</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a href="/hartaudiocables.html">
+              <div class="flex-container">
+                <img src="https://www.pyleaudio.com/1000/PPJJ15.jpg" class="card-img" alt="project picture">
+                <span class="card-title">Hart Audio Cables</span>
+                <span class="card-description">UI/UX Design Concept</span>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact" class="container">
+      <div>
+        <p>
+          Like what you see? Let's talk.
+        </p>
+        <p>
+          <a href="#!">hello@iamluigib.com</a>
+        </p>
+      </div>
+    </footer>
+  </main>
+
+  <script defer src=" node_modules/swup/dist/swup.min.js">
+  </script>
+  <script defer src="script/main-min.js"></script>
+</body>
+
+</html>
