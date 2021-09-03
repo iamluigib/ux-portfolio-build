@@ -481,7 +481,7 @@ nav {
 }
 
 #index-intro {
-  margin: 100vh auto 15vh;
+  margin: 100vh auto 5vh;
 }
 #index-intro p {
   font-size: 2.5rem;
@@ -514,7 +514,9 @@ nav {
   transition: 0.25s;
 }
 #index-gallery .card-gallery .card:hover {
-  box-shadow: 0 5px 15px 5px rgba(150, 150, 150, 0.75);
+  box-shadow: 0 5px 20px 5px rgba(150, 150, 150, 0.75);
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
   transition: 0.25s;
 }
 #index-gallery .card-gallery .card a {
@@ -681,18 +683,24 @@ nav {
   line-height: 1.5rem;
 }
 
-#hac-process {
-  padding-bottom: 15vh;
-  border-bottom: 1px solid #eaeaea;
+#hac-process img {
+  margin: 10vh auto;
 }
 #hac-process h3 {
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 5px;
+  margin-bottom: 2.5vh;
 }
 
 #hac-1 {
   margin-top: 15vh;
+  padding-top: 15vh;
+  border-top: 1px solid #eaeaea;
+}
+#hac-1 h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 5vh auto 2.5vh;
 }
 #hac-1 h5 {
   font-size: 1.5rem;
@@ -703,10 +711,40 @@ nav {
 #hac-1 h1 {
   font-size: 3rem;
   font-weight: 700;
-  margin-bottom: 15vh;
+  margin-bottom: 5vh;
   text-align: center;
 }
+#hac-1 em {
+  font-style: italic;
+  text-decoration: underline;
+}
 #hac-1 ul {
-  margin-top: 10px;
+  margin-top: 20px;
   list-style: disc inside;
+}
+#hac-1 ul li {
+  margin-bottom: 15px;
+}
+
+#hac-2 {
+  margin-top: 15vh;
+  padding-top: 15vh;
+  border-top: 1px solid #eaeaea;
+}
+#hac-2 h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 5vh auto 2.5vh;
+}
+#hac-2 h5 {
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin-bottom: 15px;
+  text-align: center;
+}
+#hac-2 h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15vh;
+  text-align: center;
 }
