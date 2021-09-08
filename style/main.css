@@ -283,6 +283,16 @@ main {
   box-shadow: 0 5px 15px 0 rgba(180, 180, 180, 0.75);
 }
 
+div.divider {
+  border-top: 1px solid #eaeaea;
+  margin-top: 15px;
+}
+
+div.card div.divider {
+  border-top: 1px solid #cccccc;
+  margin: 15px 0;
+}
+
 span.gray-text {
   color: #999999;
 }
@@ -308,7 +318,7 @@ img.rounded {
   color: black;
   background-color: #eaeaea;
   margin-top: 50px;
-  padding: 25px 35px;
+  padding: 40px 35px;
   border-radius: 15px;
 }
 .card span.card-title {
@@ -321,6 +331,50 @@ img.rounded {
 .card h6 {
   font-size: 1.25rem;
   font-weight: 700;
+}
+.card div.card-img {
+  width: 40%;
+  height: auto;
+  margin: 0 auto;
+}
+.card div.card-img img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 12px;
+  margin: 20px auto;
+}
+.card div.card-img img.circle {
+  border-radius: 1000px;
+}
+
+.center {
+  text-align: center;
+}
+
+.img-gallery {
+  margin: 20px 0 50px;
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  padding-left: 20px;
+}
+.img-gallery::-webkit-scrollbar {
+  display: none;
+}
+.img-gallery .img-gallery-inner img {
+  width: 250px;
+  height: auto;
+  background-color: white;
+  box-shadow: 0 5px 15px 0 rgba(180, 180, 180, 0.75);
+  margin: 20px 15px 30px 0;
+  padding: 0;
+  border-radius: 15px;
+  display: inline-block;
+}
+.img-gallery .img-gallery-inner:first-child {
+  padding-left: 15vw;
 }
 
 /*********
@@ -628,6 +682,7 @@ nav {
   font-size: 2.5rem;
   font-weight: 700;
   color: #148dff;
+  text-decoration: none;
 }
 #contact p a:hover {
   text-decoration: underline;
@@ -692,59 +747,64 @@ nav {
   margin-bottom: 2.5vh;
 }
 
-#hac-1 {
+.project-section {
   margin-top: 15vh;
   padding-top: 15vh;
   border-top: 1px solid #eaeaea;
 }
-#hac-1 h3 {
+.project-section h3 {
   font-size: 2rem;
   font-weight: 700;
   margin: 5vh auto 2.5vh;
 }
-#hac-1 h5 {
+.project-section h5 {
   font-size: 1.5rem;
   font-weight: 200;
   margin-bottom: 15px;
   text-align: center;
 }
-#hac-1 h1 {
+.project-section h1 {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 5vh;
   text-align: center;
 }
-#hac-1 em {
+.project-section em {
   font-style: italic;
   text-decoration: underline;
 }
-#hac-1 ul {
+.project-section ul {
   margin-top: 20px;
   list-style: disc inside;
 }
-#hac-1 ul li {
+.project-section ul li {
   margin-bottom: 15px;
 }
 
-#hac-2 {
-  margin-top: 15vh;
-  padding-top: 15vh;
-  border-top: 1px solid #eaeaea;
+#hac-3 {
+  overflow: visible !important;
 }
-#hac-2 h3 {
-  font-size: 2rem;
+
+#hac-5 {
+  background-color: #eaeaea;
+  margin-top: 10vh;
+  padding: 20vh 0;
+}
+#hac-5 h3 {
+  font-size: 2.5rem;
   font-weight: 700;
-  margin: 5vh auto 2.5vh;
 }
-#hac-2 h5 {
-  font-size: 1.5rem;
-  font-weight: 200;
-  margin-bottom: 15px;
-  text-align: center;
-}
-#hac-2 h1 {
-  font-size: 3rem;
+#hac-5 a {
+  font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 15vh;
-  text-align: center;
+  color: #148dff;
+  text-decoration: none;
+}
+#hac-5 a:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 800px) {
+  #hac-5 a {
+    font-size: 1.5rem;
+  }
 }
