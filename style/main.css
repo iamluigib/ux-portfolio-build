@@ -538,6 +538,12 @@ nav {
 #index-intro {
   margin: 110vh auto 15vh;
 }
+@media screen and (max-width: 400px) {
+  #index-intro {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
 #index-intro h2 {
   font-size: 2.5rem;
   line-height: auto;
@@ -547,7 +553,6 @@ nav {
 @media screen and (max-width: 400px) {
   #index-intro h2 {
     font-size: 2rem;
-    padding-left: 2rem;
   }
 }
 #index-intro p {
