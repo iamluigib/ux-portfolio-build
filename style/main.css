@@ -408,10 +408,8 @@ nav {
 
 #menuToggle {
   width: 50%;
-  display: -webkit-flex;
   display: flex;
-  -webkit-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   position: fixed;
   top: 25px;
   left: 25px;
@@ -423,7 +421,6 @@ nav {
 }
 
 #menuToggle input {
-  display: -webkit-flex;
   display: flex;
   width: 40px;
   height: 32px;
@@ -436,7 +433,6 @@ nav {
 }
 
 #menuToggle span {
-  display: -webkit-flex;
   display: flex;
   width: 29px;
   height: 2px;
@@ -530,26 +526,42 @@ nav {
           transform: translate(-50%, -50%);
 }
 #index-hero h1 {
-  font-size: 3rem;
+  font-size: 5rem;
   font-weight: 700;
+}
+@media screen and (max-width: 400px) {
+  #index-hero h1 {
+    font-size: 4rem;
+  }
 }
 
 #index-intro {
-  margin: 100vh auto 5vh;
+  margin: 110vh auto 15vh;
 }
-#index-intro p {
+#index-intro h2 {
   font-size: 2.5rem;
   line-height: auto;
   font-weight: 700;
-  text-align: center;
+  text-align: left;
+}
+@media screen and (max-width: 400px) {
+  #index-intro h2 {
+    font-size: 2rem;
+    padding-left: 2rem;
+  }
+}
+#index-intro p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  letter-spacing: 0.02rem;
+  font-weight: 300;
+  margin-top: 1rem;
 }
 
 #index-gallery .card-gallery {
   margin: 50px auto;
-  display: -webkit-flex;
   display: flex;
-  -webkit-flex-flow: row wrap;
-          flex-flow: row wrap;
+  flex-flow: row wrap;
 }
 @media screen and (max-width: 800px) {
   #index-gallery .card-gallery {
@@ -578,10 +590,8 @@ nav {
   text-decoration: none;
 }
 #index-gallery .card-gallery .card .flex-container {
-  display: -webkit-flex;
   display: flex;
-  -webkit-flex-flow: column wrap;
-          flex-flow: column wrap;
+  flex-flow: column wrap;
   border-radius: 15px;
   text-decoration: none;
 }
@@ -635,10 +645,8 @@ nav {
   color: black;
 }
 #index-gallery .card-gallery-mobile .card-gallery-inner .card .flex-container {
-  display: -webkit-flex;
   display: flex;
-  -webkit-flex-flow: column wrap;
-          flex-flow: column wrap;
+  flex-flow: column wrap;
 }
 #index-gallery .card-gallery-mobile .card-gallery-inner .card .flex-container .card-img {
   width: 100%;
@@ -663,19 +671,23 @@ nav {
 }
 
 #contact {
-  margin: 25vh auto;
+  margin: 15vh auto;
   text-align: center;
 }
-#contact :nth-child(even) {
-  margin-top: 50px;
+@media screen and (max-width: 400px) {
+  #contact {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 #contact p {
   font-size: 2.5rem;
   font-weight: 700;
+  line-height: 1.5;
 }
 @media screen and (max-width: 800px) {
   #contact p {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 #contact p a {
@@ -689,7 +701,7 @@ nav {
 }
 @media screen and (max-width: 800px) {
   #contact p a {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -711,10 +723,8 @@ nav {
 }
 
 #hac-overview {
-  display: -webkit-flex;
   display: flex;
-  -webkit-flex-flow: row wrap;
-          flex-flow: row wrap;
+  flex-flow: row wrap;
   margin-top: 50px;
 }
 #hac-overview div {
