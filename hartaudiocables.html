@@ -2,372 +2,419 @@
 <html>
 
   <head>
+
     <meta charset="UTF-8">
     <meta name="description" content="UI/UX Design Portfolio">
-    <meta name="keywords" content="Design, UX, UI, Designer, Web, Graphic">
+    <meta name="keywords" content="Design, UX, UI, Designer, Web, Graphic, Luigi, Battista">
     <meta name="author" content="Luigi Battista">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,400;0,600;0,700;0,800;0,900;1,200;1,400;1,600;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style/main.css" media="screen" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,400;1,600;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" type="text/css" href="../style/main.css" media="screen" />
+
+    <script defer type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+    <script defer src="node_modules/swup/dist/swup.min.js"></script>
+    <script defer src="/script/main-min.js"></script>
+
+    <title>I Am Luigi B Design Concept</title>
   </head>
 
   <body>
 
-    <nav role="navigation">
-      <div id="menuToggle">
-        <input type="checkbox" />
-        <span></span>
-        <span></span>
-        <span></span>
-        <ul id="menu">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/index.html#contact">Contact</a></li>
-        </ul>
+    <div class="navbar-fixed">
+      <nav class="z-depth-0">
+        <div class="nav-wrapper container">
+          <a href="/index.html" class="brand-logo"><img src="/media/logo/logo-black-small.png"></a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a class="black-text" href="/index.html">The Work</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="/index.html">The Work</a></li>
+    </ul>
+
+    <main id="swup" class="transition-fade">
+
+      <section class="container project-header">
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="card-panel blue lighten-4">
+              <p>
+                Project<br /><b>Design Concept</b>
+              </p>
+              <p>
+                Year<br /><b>2021</b>
+              </p>
+              <p>
+                Disciplines<br /><b>UX Design, UX Research, UI Design</b>
+              </p>
+            </div>
+          </div>
+          <div class="col s12 m7 offset-m1">
+            <h2>Welcome To Clean Audio</h2>
+            <p>
+              Hart Audio Cables is a small, boutique aftermarket audio cable manufacturer. They are cult favorite amongst audiophiles and come highly recommended wherever you look. However, their purchasing experience is not friendly to new hobbyists
+              due to the technical nature of the product. This concept was designed as an introductory experience to first time Hart Audio Cable buyers.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="row">
+          <div class="col s12">
+            <img src="media/hart_audio_cables/hac_lofi_prototype.png" alt="iamluigib logo design on white background" class="responsive-img outline-img" />
+          </div>
+        </div>
+      </section>
+
+      <div class="spacer-md"></div>
+
+      <section class="container">
+        <div class="row">
+          <div class="col s12">
+            <h3>Empathize</h3>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s12">
+            <p>
+              I first sought to understand how people felt about the hartaudiocables.com current purchasing process. Where were the pain points and issues, and is there even a problem to solve?
+            </p>
+            <p>
+              HAC's products have quickly become a favorite aftermarket cable supplier of a significant portion of the high-end headphone community. You will very regularly see their name mentioned in recommendations as well as user reviews. While
+              experienced audiophiles will have no problems understanding HAC's unique approach to headphone cables, amateurs to the hobby and first time buyers may struggle to understand how to purchase a proper cable set, and which cable set to
+              purchase. HAC has acknowledged this as a potential issue on their website and offers customers the opportunity to direclty email them. While a solution, this process is entirely manual and adds a large delay on the purchasing process.
+            </p>
+            <p>
+              <b>The question was:</b> <i>could a simplified, approachable, and intuitive purchasing experience better educate and encourage new users into purchasing HAC's products, as well as alleviate manual labor from HAC's small team?</i>
+            </p>
+            <p>
+              To answer these questions, I found 5 users who have not used heartaudiocables.com but were technically familiar with the items. These users were found in various ways, including online forums and personal acquantainces and all willingly
+              chose to volunteer their time for the benefit of this study.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s12 m10 offset-m1 l8 offset-l2">
+            <div class="card grey lighten-3">
+              <div class="card-content">
+                <h5>User Testing</h5>
+                <p>
+                  Users were given a pair of headphones (Hifiman Sundaras) and asked to find the appropriate cable replacement and it to their cart. After, they were asked a series of qustions.
+                </p>
+                <br />
+                <h6>Key Takeaways</h6>
+                <p>
+                  &bull; 40% of testers felt they had chosen the right product.
+                </p>
+                <p>
+                  &bull; 20% of testers felt like they understood the buying process.
+                </p>
+                <p>
+                  &bull; It took an average of 11 minutes to complete the test.
+                </p>
+                <p>
+                  &bull; Current site is overly verbose. A large portion of the site is uninterrupted text with no variation or emphasis, discouraging testers from reading.
+                </p>
+                <p>
+                  &bull; Requiring the user to seek out two different items in two different locations in order to create a viable product was a major pain point.
+                </p>
+                <p>
+                  &bull; Proprietary code names are used to classify all of the interconnect and headphone cable types, which caused additional confusion for the majority of testers.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s12">
+            <h4>The Problem</h4>
+            <p>
+              While Hart Audio Cables offers unique and high quality aftermarket audio cables, their unusual purchasing process and customer terminology can be intimidating for new users who can easily get overwhelmed.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider container"></div>
+
+      <section class="container">
+        <div class="row">
+          <div class="col s12">
+            <h3>Ideate</h3>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s12">
+            <p>
+              After user research had completed, there were three main goals I wanted to achieve:
+            </p>
+            <p>
+              &bull; Simplify/consolidate the purchasing process
+            </p>
+            <p>
+              &bull; Provide more information during the purchase process
+            </p>
+            <p>
+              &bull; Reduce overall learning curve/time to purchase
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s12 m10 offset-m1 l8 offset-l2">
+            <div class="card grey lighten-3">
+              <div class="card-content">
+                <h5>User Persona</h5>
+                <br />
+                <img src="media/hart_audio_cables/proto-persona-jeremiah.jpg" class="responsive-img circle" />
+                <h6 class="center-align">Jeremiah Lopez</h6>
+                <p class="center-align">
+                  32 years old &bull; Accountant &bull; Masters of Finance, UNLV
+                </p>
+                <br />
+                <p>
+                  Jeremiah is a reserved person with a passion for music. He's somehwat of a homebody, and he cares a lot about his living space. Jeremiah was recently introduced to "head-fi" by a friend and has decided to purchase an audio setup of
+                  his own. After careful research, Jeremiah decided to purchase the Hifiman Sundara's as his first pair of audiophile-grade headphones. Throughout his research on the subreddit r/headphones, he noticed many people recommended getting
+                  a replacement headphone cable from a website called heartaudiocables.com. He decided to visit the website and get a new cable.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s12 m10 offset-m1 l8 offset-l2">
+            <div class="card grey lighten-3">
+              <div class="card-content">
+                <h5>User Flow Chart</h5>
+                <img src="media/hart_audio_cables/hac-user-flow.png" class="responsive-img" />
+                <br />
+                <p>
+                  This user flow chart describes the steps the user will take in purchasing a new cable from hartaudiocables.com. The process defined here is a mixture of the current process as well as new processes that were devised during the
+                  ideation process. This chart will guide the low fidelity prototype designing process.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider container">
       </div>
-      <a href="/index.html"><img src="media/logo/logo-black-small.png" id="nav-logo" /></a>
-    </nav>
 
-    <main id="hac">
-
-      <section id="proj-intro" class="container">
-        <h2>Hart Audio Cables</h2>
-        <p>
-          I sought out to design an introductory experience for Hart Audio Cables to guide and educate first time buyers to increase customer confidence and overall purchases.
-        </p>
-        <div>
-          <h4>Role</h4>
-          <ul>
-            <li>Lead UI Designer</li>
-            <li>Lead UX Designer</li>
-            <li>Lead UX Researcher</li>
-            <li>I did this project by myself</li>
-          </ul>
-        </div>
-        <div>
-          <h4>Deliverables</h4>
-          <ul>
-            <li>Low Fidelity Prototype</li>
-            <li>High Fidelity Prototype</li>
-            <li>User Research Data</li>
-            <li>
-              A kick-ass presentation
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h4>Tools</h4>
-          <ul>
-            <li>Sketch</li>
-            <li>Trello</li>
-            <li>Google Forms</li>
-            <li>Coffee (the beverage)</li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="proj-process" class="container">
-        <div>
-          <img src="/media/headphones-on-black-background.jpg" class="scale-img rounded float" />
-        </div>
-        <div>
-          <h3>A Unique Approach</h3>
-          <p>
-            Hart Audio Cables is a fledgling company based out of Texas that specializes in creating custom, high quality cables for headphones. HAC's cables are known for their unique interconnect system, allowing one headphone cable to work
-            with every device you
-            own.
-          </p>
-        </div>
-      </section>
-
-      <section id="hac-1" class="project-section container">
-        <div>
-          <h5>Step 1</h5>
-          <h1>Empathize</h1>
-        </div>
-
-        <div>
-          <p>
-            I first sought to understand how people felt about the hartaudiocables.com current purchasing process. Where were the pain points and issues, and is there even a problem to solve?
-          </p>
-          <br />
-          <p>
-            HAC's products have quickly become a favorite aftermarket cable supplier of a significant portion of the high-end headphone community. You will very regularly see their name mentioned in recommendations as well as user reviews. While
-            experienced audiophiles will have no problems understanding HAC's unique approach to headphone cables, amateurs to the hobby and first time buyers may struggle to understand how to purchase a proper cable set, and which cable set to
-            purchase. HAC has acknowledged this as a potential issue on their website and offers customers the opportunity to direclty email them. While a solution, this process is entirely manual and adds a large delay on the purchasing process.
-          </p>
-          <br />
-          <p>
-            The question was: <em>could a simplified, approachable, and intuitive purchasing experience better educate and encourage new users into purchasing HAC's products, as well as alleviate manual labor from HAC's small team?</em>
-          </p>
-          <br />
-          <p>
-            To answer these questions, I found 5 users who have not used heartaudiocables.com but were technically familiar with the items. These users were found in various ways, including online forums and personal acquantainces and all willingly
-            chose to volunteer their time for the benefit of
-            this study.
-          </p>
-        </div>
-
-        <div class="card" id="hac-user-research">
-          <span class="card-title">User Research</span>
-          <p>
-            Users were given a pair of headphones (Hifiman Sundaras) and asked to find the appropriate cable replacement and it to their cart. After, they were asked a series of qustions.
-          </p>
-          <p>
-            A detailed record of the testing results can be found <a href="#!">here</a>.
-          </p>
-          <br />
-          <h6>Key Takeaways</h6>
-          <ul list-style="circle outside">
-            <li>40% of testers felt they had chosen the right product.</li>
-            <li>20% of testers felt like they understood the buying process.</li>
-            <li>It took an average of 11 minutes to complete the test.</li>
-            <li>Current site is overly verbose. A large portion of the site is uninterrupted text with no variation or emphasis, discouraging testers from reading.</li>
-            <li>The site offers interconnects and headphone cables, but one of each is required to make a working cable. This process, in particular the use of the term "interconnect," were major pain points.</li>
-            <li>Proprietary code names are used to classify all of the interconnect and headphone cable types, which caused additional confusion for the majority of testers who are already famililar with their industry standard names.</li>
-          </ul>
-        </div>
-
-        <div>
-          <h3>The Problem</h3>
-        </div>
-
-        <div>
-          <p>
-            While Hart Audio Cables offers unique and high quality aftermarket audio cables, their unusual purchasing process and customer terminology can be intimidating for new users who can easily get overwhelmed.
-          </p>
-        </div>
-      </section>
-
-      <section id="hac-2" class="project-section container">
-        <div>
-          <h5>Step 2</h5>
-          <h1>Ideate</h1>
-        </div>
-
-        <div>
-          <h3>Goals</h3>
-        </div>
-
-        <div>
-          <ul>
-            <li>
-              Simplify the purchasing process for new users.
-            </li>
-            <li>
-              Provide more information during the purchase process.
-            </li>
-            <li>
-              Reduce learning curve; time to purchase.
-            </li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <span class="card-title">User Persona</span>
-          <p>
-            A user persona was created to act as a reference when ideating and designing.
-          </p>
-          <div class="divider"></div>
-          <div class="card-img">
-            <img src="media/proto-persona-jeremiah.jpg" class="circle" />
-          </div>
-          <h6 class="center">Jeremiah Lopez</h6>
-          <p class="center">
-            32 years old &bull; Accountant &bull; Masters of Finance, UNLV
-          </p>
-          <p>
-            Jeremiah is a reserved person with a passion for music. He's somehwat of a homebody, and he cares a lot about his living space. Jeremiah was recently introduced to "head-fi" by a friend and has decided to purchase an audio setup of his
-            own.
-            After careful research, Jeremiah decided to purchase the Hifiman Sundara's as his first pair of audiophile-grade headphones. Throughout his research on the subreddit r/headphones, he noticed many people recommended getting a replacement
-            headphone cable from a website called heartaudiocables.com. He decided to visit the website and get a new cable.
-          </p>
-        </div>
-
-        <div>
-          <h3>Sketching Ideas</h3>
-          <p>
-            (placeholder)
-          </p>
-        </div>
-
-        <div class="card">
-          <span class="card-title">User Flow Chart</span>
-          <div class="card-img">
-            <img src="media/hac-user-flow.png" />
-          </div>
-          <p>
-            This user flow chart describes the steps the user will take in purchasing a new cable from hartaudiocables.com. The process defined here is a mixture of the current process as well as new processes that were devised during the ideation
-            process. This chart will guide the low fidelity prototype designing process.
-          </p>
-        </div>
-      </section>
-
-      <section id="hac-3" class="project-section">
-        <div class="container">
-          <h5>Step 3</h5>
-          <h1>Low Fidelity Prototype</h1>
-        </div>
-
-        <div class="img-gallery">
-          <div class="img-gallery-inner">
-            <img src="media/hac-lofi-prototype/screen1.png" alt="low fidelity prototype snapshot 1" />
-            <img src="media/hac-lofi-prototype/screen2.png" alt="low fidelity prototype snapshot 2" />
-            <img src="media/hac-lofi-prototype/screen3.png" alt="low fidelity prototype snapshot 3" />
-            <img src="media/hac-lofi-prototype/screen4.png" alt="low fidelity prototype snapshot 4" />
-            <img src="media/hac-lofi-prototype/screen5.png" alt="low fidelity prototype snapshot 5" />
-            <img src="media/hac-lofi-prototype/screen6.png" alt="low fidelity prototype snapshot 6" />
-            <img src="media/hac-lofi-prototype/screen7.png" alt="low fidelity prototype snapshot 7" />
-            <img src="media/hac-lofi-prototype/screen8.png" alt="low fidelity prototype snapshot 8" />
-            <img src="media/hac-lofi-prototype/screen9.png" alt="low fidelity prototype snapshot 9" />
-            <img src="media/hac-lofi-prototype/screen10.png" alt="low fidelity prototype snapshot 10" />
-            <img src="media/hac-lofi-prototype/screen11.png" alt="low fidelity prototype snapshot 11" />
-            <img src="media/hac-lofi-prototype/screen12.png" alt="low fidelity prototype snapshot 12" />
+      <section>
+        <div class="row container">
+          <div class="col s12">
+            <h3>Low Fidelity Prototype</h3>
           </div>
         </div>
 
-        <div class="container">
-          <p>
-            After low-fi prototypes were completed I re-tested the same participants from user testing using the new prototype.
-          </p>
-
-          <h3>Feedback</h3>
-
-          <p>
-            Testers appreciated the ability to input your headphone and having the site recommend the correct cabling for you, instead of having to guess yourself. Testers also appreciated the more guided approach this experience gave them compared
-            to
-            their original experiences with the current site’s process.
-            <br /><br />
-            However, the visual guide at the top of the page caused some confusion among testers as the esoteric shapes and out of order process gave little guidance. Testers also struggled at multiple points to determine what is an interactable
-            object.
-            <br /><br />
-            With the tester’s feedback in mind, I moved onto high fidelity prototypes.
-          </p>
-        </div>
-
-      </section>
-
-      <section id="hac-4" class="project-section">
-        <div class="container">
-          <h5>Step 4</h5>
-          <h1>High Fidelity Prototype</h1>
-        </div>
-
-        <div class="img-gallery">
-          <div class="img-gallery-inner">
-            <img src="media/hac-hifi-prototype/hifi-screen1.png" alt="high fidelity prototype snapshot" />
-            <img src="media/hac-hifi-prototype/hifi-screen2.png" alt="high fidelity prototype snapshot" />
-            <img src="media/hac-hifi-prototype/hifi-screen3.png" alt="high fidelity prototype snapshot" />
-            <img src="media/hac-hifi-prototype/hifi-screen4.png" alt="high fidelity prototype snapshot" />
-            <img src="media/hac-hifi-prototype/hifi-screen5.png" alt="high fidelity prototype snapshot" />
-            <img src="media/hac-hifi-prototype/hifi-screen6.png" alt="high fidelity prototype snapshot" />
-            <img src="media/hac-hifi-prototype/hifi-screen7.png" alt="high fidelity prototype snapshot" />
-            <img src="media/hac-hifi-prototype/hifi-screen8.png" alt="high fidelity prototype snapshot" />
-            <img src="media/hac-hifi-prototype/hifi-screen9.png" alt="high fidelity prototype snapshot" />
-            <img src="media/hac-hifi-prototype/hifi-screen15.png" alt="high fidelity prototype snapshot" />
-            <img src="media/hac-hifi-prototype/hifi-screen10.png" alt="high fidelity prototype snapshot" />
-            <img src="media/hac-hifi-prototype/hifi-screen11.png" alt="high fidelity prototype snapshot" />
-            <img src="media/hac-hifi-prototype/hifi-screen12.png" alt="high fidelity prototype snapshot" />
-            <img src="media/hac-hifi-prototype/hifi-screen13.png" alt="high fidelity prototype snapshot" />
-            <img src="media/hac-hifi-prototype/hifi-screen14.png" alt="high fidelity prototype snapshot" />
+        <div class="row">
+          <div class="col s12">
+            <div class="img-gallery">
+              <div class="img-gallery-inner">
+                <img src="media/hart_audio_cables/lofi-prototype/screen1.png" alt="low fidelity prototype snapshot 1" />
+                <img src="media/hart_audio_cables/lofi-prototype/screen2.png" alt="low fidelity prototype snapshot 2" />
+                <img src="media/hart_audio_cables/lofi-prototype/screen3.png" alt="low fidelity prototype snapshot 3" />
+                <img src="media/hart_audio_cables/lofi-prototype/screen4.png" alt="low fidelity prototype snapshot 4" />
+                <img src="media/hart_audio_cables/lofi-prototype/screen5.png" alt="low fidelity prototype snapshot 5" />
+                <img src="media/hart_audio_cables/lofi-prototype/screen6.png" alt="low fidelity prototype snapshot 6" />
+                <img src="media/hart_audio_cables/lofi-prototype/screen7.png" alt="low fidelity prototype snapshot 7" />
+                <img src="media/hart_audio_cables/lofi-prototype/screen8.png" alt="low fidelity prototype snapshot 8" />
+                <img src="media/hart_audio_cables/lofi-prototype/screen9.png" alt="low fidelity prototype snapshot 9" />
+                <img src="media/hart_audio_cables/lofi-prototype/screen10.png" alt="low fidelity prototype snapshot 10" />
+                <img src="media/hart_audio_cables/lofi-prototype/screen11.png" alt="low fidelity prototype snapshot 11" />
+                <img src="media/hart_audio_cables/lofi-prototype/screen12.png" alt="low fidelity prototype snapshot 12" />
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="container">
-          <p>
-            Taking feedback from low-fi prototype testing, greater emphasis was placed on interactable components--mainly greater use of buttons and common touch related gestures/symbols.
-          </p>
-          <br />
-          <p>
-            A focus was placed on reachability. Nearly all major interactable components should be within reachable distance of the thumb without the user adjusting their grip on the phone.
-          </p>
-          <br />
-          <p>
-            Complexity was reduced by only presenting the user with one decision on screen at any given time.
-          </p>
-          <br />
-          <p>
-            Explanations were provided frequently and whenever there was a new concept introduced. Examples include explanations of different cable types in the second to last screen shot, and an interconnect explanation on the last screenshot.
-          </p>
+        <div class="row container">
+          <div class="col s12">
+            <p>
+              After low-fi prototypes were completed I re-tested the same participants from user testing using the new prototype.
+            </p>
+          </div>
         </div>
 
-      </section>
-
-      <section id="hac-4" class="project-section container">
-        <div>
-          <h5>Step 5</h5>
-          <h1>Results &amp; Reflection</h1>
-        </div>
-
-        <div>
-          <p>
-            Five new testers were found and asked to perform the same test as those in the original <a href="#hac-user-research">user research test</a>. Some key takaways from the new batch of testers compared to the original:
-          </p>
-
-          <h3 class="center">2x</h3>
-          <p class="center">
-            More users who felt confident with their selection.
-            <br />
-            (40% vs. 80%)
-          </p>
-
-          <h3 class="center">4x</h3>
-          <p class="center">
-            More users who felt they understood the buying process.
-            <br />
-            (20% vs. 80%)
-          </p>
-
-          <h3 class="center">367%</h3>
-          <p class="center">
-            Faster average time to completion.
-            <br />
-            (11 minutes vs. 3 minutes)
-          </p>
-        </div>
-
-        <div>
-          <h3>Next Steps</h3>
-          <p>
-            All protoypes and testing focused on mobile workflows, so optimizing the process for tablet and desktop versions would be required going forward.
-          </p>
-          <br />
-          <p>
-            More user testing can be performed to find specific pain points and the high fidelity prototype revised to adjust for that testing.
-          </p>
-          <br />
-          <p>
-            The scope of this project focused on the main purchasing flow of hartaudiocables.com, but other parts of the website could be further optimised--such as the customer shop service.
-          </p>
-        </div>
-
-      </section>
-
-      <section id="hac-5">
-        <div>
-          <p class="center">
-            Not convinced yet?<br />
-            <a href="index.html">See another project.</a>
-          </p>
+        <div class="row container">
+          <div class="col s12">
+            <h4>Feedback</h4>
+            <p>
+              Testers appreciated the ability to input your headphone and having the site recommend the correct cabling for you, instead of having to guess yourself. Testers also appreciated the more guided approach this experience gave them compared
+              to their original experiences with the current site’s process.
+            </p>
+            <p>
+              However, the visual guide at the top of the page caused some confusion among testers as the esoteric shapes and out of order process gave little guidance. Testers also struggled at multiple points to determine what is an interactable
+              object.
+            </p>
+            <p>
+              With the tester’s feedback in mind, I moved onto high fidelity prototypes.
+            </p>
+          </div>
         </div>
       </section>
 
-      <footer id="contact">
-        <div>
-          <p>
-            Like what you see?<br>
-            Let's talk.<br>
-            <a href="https://twitter.com/iamluigib">Twitter</a> | <a href="https://www.instagram.com/iamluigibattista/">Instagram</a>
-          </p>
+      <div class="divider container">
+      </div>
+
+      <section>
+        <div class="row container">
+          <div class="col s12">
+            <h3>High Fidelity Prototype</h3>
+          </div>
         </div>
-      </footer>
+
+        <div class="row">
+          <div class="col s12">
+            <div class="img-gallery">
+              <div class="img-gallery-inner">
+                <img src="media/hart_audio_cables/hifi-prototype/hifi-screen1.png" alt="high fidelity prototype snapshot" />
+                <img src="media/hart_audio_cables/hifi-prototype/hifi-screen2.png" alt="high fidelity prototype snapshot" />
+                <img src="media/hart_audio_cables/hifi-prototype/hifi-screen3.png" alt="high fidelity prototype snapshot" />
+                <img src="media/hart_audio_cables/hifi-prototype/hifi-screen4.png" alt="high fidelity prototype snapshot" />
+                <img src="media/hart_audio_cables/hifi-prototype/hifi-screen5.png" alt="high fidelity prototype snapshot" />
+                <img src="media/hart_audio_cables/hifi-prototype/hifi-screen6.png" alt="high fidelity prototype snapshot" />
+                <img src="media/hart_audio_cables/hifi-prototype/hifi-screen7.png" alt="high fidelity prototype snapshot" />
+                <img src="media/hart_audio_cables/hifi-prototype/hifi-screen8.png" alt="high fidelity prototype snapshot" />
+                <img src="media/hart_audio_cables/hifi-prototype/hifi-screen9.png" alt="high fidelity prototype snapshot" />
+                <img src="media/hart_audio_cables/hifi-prototype/hifi-screen15.png" alt="high fidelity prototype snapshot" />
+                <img src="media/hart_audio_cables/hifi-prototype/hifi-screen10.png" alt="high fidelity prototype snapshot" />
+                <img src="media/hart_audio_cables/hifi-prototype/hifi-screen11.png" alt="high fidelity prototype snapshot" />
+                <img src="media/hart_audio_cables/hifi-prototype/hifi-screen12.png" alt="high fidelity prototype snapshot" />
+                <img src="media/hart_audio_cables/hifi-prototype/hifi-screen13.png" alt="high fidelity prototype snapshot" />
+                <img src="media/hart_audio_cables/hifi-prototype/hifi-screen14.png" alt="high fidelity prototype snapshot" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row container">
+          <div class="col s12">
+            <p>
+              Taking feedback from low-fi prototype testing, greater emphasis was placed on interactable components--mainly greater use of buttons and common touch related gestures/symbols.
+            </p>
+            <p>
+              A focus was placed on reachability. Nearly all major interactable components should be within reachable distance of the thumb without the user adjusting their grip on the phone.
+            </p>
+            <p>
+              Complexity was reduced by only presenting the user with one decision on screen at any given time.
+            </p>
+            <p>
+              Explanations were provided frequently and whenever there was a new concept introduced. Examples include explanations of different cable types in the second to last screen shot, and an interconnect explanation on the last screenshot.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider container">
+      </div>
+
+      <section class="container">
+        <div class="row">
+          <div class="col s12">
+            <h3>Results &amp; Reflection</h3>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s12">
+            <p>
+              Five new testers were found and asked to perform the same test as those in the original user research test. Some key takaways from the new batch of testers compared to the original:
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s12">
+            <h5>2x</h5>
+            <p>
+              More users who felt condient with their selection.
+            </p>
+            <p>
+              (40% vs 80%)
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s12">
+            <h5>4x</h5>
+            <p>
+              More users who felt they understood the buying process.
+            </p>
+            <p>
+              (20% vs 80%)
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s12">
+            <h5>367%</h5>
+            <p>
+              Faster average time to completion.
+            </p>
+            <p>
+              (11 minutes vs. 3 minutes)
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s12">
+            <h4>Next Steps</h4>
+          </div>
+          <div class="col s12">
+            <p>
+              All protoypes and testing focused on mobile workflows, so optimizing the process for tablet and desktop versions would be required going forward.
+            </p>
+            <p>
+              More user testing can be performed to find specific pain points and the high fidelity prototype revised to adjust for that testing.
+            </p>
+            <p>
+              The scope of this project focused on the main purchasing flow of hartaudiocables.com, but other parts of the website could be further optimised--such as the customer shop service.
+            </p>
+          </div>
+        </div>
+      </section>
+
     </main>
 
-    <script defer src=" node_modules/swup/dist/swup.min.js">
-    </script>
-    <script defer src="script/main-min.js"></script>
+    <footer class="page-footer white transition-fade">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 center-align">
+            <h5 class="black-text">Like what you see? Let's talk.</h5>
+            <a href="https://instagram.com/iamluigibattista"><img src="media/instagram-icon-circle.png" class="social-icon" /></a>
+            <a href="https://twitter.com/iamluigib"><img src="media/twitter-icon-circle.png" class="social-icon" /></a>
+            <a href="https://linkedin.com/in/iamluigib"><img src="media/linkedin-icon-circle.png" class="social-icon" /></a>
+            <a href="mailto:luigi.n.battista@gmail.com?subject=Hello Luigi, I'd Like To Talk"><img src="media/email-icon-circle.png" class="social-icon" /></a>
+            <br>
+            <p class="black-text">
+              Hand-Coded With Malice and Anger
+            </p>
+            <p class="black-text">
+              © 2022 Luigi Battista
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 
 </html>
