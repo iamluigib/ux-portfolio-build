@@ -82,35 +82,17 @@ p {
 
 .card {
   box-shadow: none;
-  border-radius: 12px;
+  border-radius: 16px;
 }
 .card .card-image img {
-  border-top-right-radius: 12px;
-  border-top-left-radius: 12px;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
 }
 .card .card-title {
   font-weight: 600;
 }
-.card .btn-flat {
-  height: 40px;
-  color: black;
-  background-color: #eaeaea;
-  font-weight: 600;
-  padding: 1px 40px;
-  border-radius: 100px;
-}
-.card .btn-flat:hover {
-  color: black;
-  background-color: #adadad;
-}
-.card.hoverable {
-  transition: ease-in-out 0.3s;
-}
-.card.hoverable:hover {
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
-  transition: ease-in-out 0.3s;
-  box-shadow: 0 0 15px 0 rgba(222, 222, 222, 0.75);
+.card .btn {
+  background-color: white;
 }
 
 .card-panel {
@@ -160,16 +142,27 @@ figcaption {
   INDEX
 ********/
 #index-hero {
-  height: 85vh;
-  width: auto;
+  margin: 18vh auto;
 }
-
-#showcase .row {
-  margin-bottom: 0;
+@media only screen and (max-width: 600px) {
+  #index-hero {
+    margin: 9vh auto;
+  }
+}
+#index-hero p {
+  font-size: 2rem;
+  font-weight: 700;
+}
+#index-hero i {
+  font-style: normal;
+  /* Created with https://www.css-gradient.com */
+  background: #F958AC;
+  background: linear-gradient(to top left, #F958AC, #EDAA51);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#index-hero .row {
   border-radius: 16px;
-}
-#showcase .gray-bg {
-  background-color: #eaeaea;
 }
 
 /***********

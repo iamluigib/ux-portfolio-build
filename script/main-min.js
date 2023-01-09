@@ -1,1 +1,1 @@
-const swup=new Swup;M.AutoInit();
+M.AutoInit();
