@@ -9,6 +9,7 @@
 	<meta name="author" content="Luigi Battista">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<link rel="icon" type="image/x-icon" href="/media/logo/logo-white-small.png">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,400;1,600;1,800;1,900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -27,7 +28,7 @@
 		<nav class="z-depth-0">
 			<div class="nav-wrapper container">
 				<a href="/index.html" class="brand-logo left-align"><img src="/media/logo/logo-black-small.png"></a>
-				<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+				<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
 				<ul class="right hide-on-med-and-down">
 					<li><a href="about.html">About Me</a></li>
 				</ul>
@@ -68,21 +69,6 @@
 					<h6>Designed for Apple (Claris) in 2022</h6>
 				</div>
 			</div>
-
-			<div class="row">
-				<div class="col s12 m6 offset-m3 l4 offset-l4">
-					<div class="card-panel center-align" style="margin-top: 50px;">
-						<h5>Jump To</h5>
-						<br />
-						<a href="#introduction">Introduction</a>
-						<br /><br />
-						<a href="#existing-design">Existing Design</a>
-						<br /><br />
-						<a href="#proposed-design">Proposed Design</a>
-						<br /><br />
-					</div>
-				</div>
-			</div>
 		</section>
 
 		<section class="container" id="introduction">
@@ -120,7 +106,7 @@
 			<div class="row">
 				<div class="col s12">
 					<figure>
-						<img src="media/claris/cs_users_original.png" class="responsive-img" />
+						<img src="media/claris/cs_users_original.png" class="responsive-img materialboxed" />
 						<figcaption>
 							The current users group has limited functionality, and no way to manage groups. Only two roles are available, and there is only room for roughly one more. Only action items are to add a new user or remove a current one. Line items are
 							not interactable outside of the role toggle and the “…” menus.
@@ -141,244 +127,226 @@
 		<section class="container" id="proposed-design">
 			<div class="row">
 				<div class="col s12 center-align">
+					<h4>Ideation</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s12 m8 offset-m2">
+					<p class="flow-text">Both the user management and group management pages were extremely limited in functionality. Combining these two interfaces provided an opportunity for improvement. The goal was to lay the groundwork for additional functionalities while also providing usability fixes. Instead of pigeon-holing users into performing an action the way that I thought best or the majority of users thought best, I wanted to provide multiple ways to accomplish the same action with the thought that most users first attempt to do perform an action would be the correct one.</p>
+
+					<p class="flow-text">After intial concepts and then internal user testing, I was able to create detailed mockups describing the look and functionality of the new unified user management experience.</p>
+				</div>
+			</div>
+		</section>
+
+		<div class="row container">
+			<div class="col s12">
+				<div class="divider">
+
+				</div>
+			</div>
+		</div>
+
+		<section class="container" id="proposed-design">
+			<div class="row">
+				<div class="col s12 center-align">
 					<h4>Proposed Design</h4>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col s12 center-align">
-					<h5>Populated State</h5>
+					<h6>Separated by feature</h6>
 				</div>
 			</div>
 
 			<div class="row">
 				<div class="col s12">
-					<figure>
-						<img src="media/claris/ug_allUsers.png" class="responsive-img" />
-					</figure>
+					<ul class="collapsible">
+						<li>
+							<div class="collapsible-header"><i class="material-icons">arrow_drop_down</i>Populated State</div>
+							<div class="collapsible-body"><span>
+									<figure>
+										<img src="media/claris/ug_allUsers.png" class="responsive-img materialboxed" />
+									</figure>
+								</span>
+							</div>
+						</li>
+
+						<li>
+							<div class="collapsible-header"><i class="material-icons">arrow_drop_down</i>Drag &amp; Drop</div>
+							<div class="collapsible-body">
+								<span>
+									<figure>
+										<img src="media/claris/ug_dnd_1.png" class="responsive-img materialboxed" />
+									</figure>
+									<figure>
+										<img src="media/claris/ug_dnd_2.png" class="responsive-img materialboxed" />
+									</figure>
+									<figure>
+										<img src="media/claris/ug_dnd_3.png" class="responsive-img materialboxed" />
+									</figure>
+									<figure>
+										<img src="media/claris/ug_dnd_4.png" class="responsive-img materialboxed" />
+									</figure>
+								</span>
+							</div>
+						</li>
+
+						<li>
+							<div class="collapsible-header"><i class="material-icons">arrow_drop_down</i>Role Selector</div>
+							<div class="collapsible-body">
+								<span>
+									<figure>
+										<img src="media/claris/ug_roleDropdown_1.png" class="responsive-img materialboxed" />
+									</figure>
+								</span>
+							</div>
+						</li>
+
+						<li>
+							<div class="collapsible-header"><i class="material-icons">arrow_drop_down</i>Group Tags</div>
+							<div class="collapsible-body">
+								<span>
+									<figure>
+										<img src="media/claris/ug_gTags_1.png" class="responsive-img materialboxed" />
+									</figure>
+									<figure>
+										<img src="media/claris/ug_gTags_2.png" class="responsive-img materialboxed" />
+									</figure>
+									<figure>
+										<img src="media/claris/ug_gTags_3.png" class="responsive-img materialboxed" />
+									</figure>
+									<figure>
+										<img src="media/claris/ug_gTags_4.png" class="responsive-img materialboxed" />
+									</figure>
+									<figure>
+										<img src="media/claris/ug_gTags_5.png" class="responsive-img materialboxed" />
+									</figure>
+								</span>
+							</div>
+						</li>
+
+						<li>
+							<div class="collapsible-header"><i class="material-icons">arrow_drop_down</i>Status Tooltip</div>
+							<div class="collapsible-body">
+								<span>
+									<figure>
+										<img src="media/claris/ug_tooltip_1.png" class="responsive-img materialboxed" />
+									</figure>
+									<figure>
+										<img src="media/claris/ug_tooltip_2.png" class="responsive-img materialboxed" />
+									</figure>
+								</span>
+							</div>
+						</li>
+
+						<li>
+							<div class="collapsible-header"><i class="material-icons">arrow_drop_down</i>Sorting Behavior</div>
+							<div class="collapsible-body">
+								<span>
+									<figure>
+										<img src="media/claris/ug_sorting_1.png" class="responsive-img materialboxed" />
+									</figure>
+									<figure>
+										<img src="media/claris/ug_sorting_2.png" class="responsive-img materialboxed" />
+									</figure>
+									<figure>
+										<img src="media/claris/ug_sorting_3.png" class="responsive-img materialboxed" />
+									</figure>
+								</span>
+							</div>
+						</li>
+
+						<li>
+							<div class="collapsible-header"><i class="material-icons">arrow_drop_down</i>Add New User</div>
+							<div class="collapsible-body">
+								<span>
+									<figure>
+										<img src="media/claris/ug_newUser_1.png" class="responsive-img materialboxed" />
+									</figure>
+									<figure>
+										<img src="media/claris/ug_newUser_2.png" class="responsive-img materialboxed" />
+									</figure>
+									<figure>
+										<img src="media/claris/ug_newUser_3.png" class="responsive-img materialboxed" />
+									</figure>
+								</span>
+							</div>
+						</li>
+
+						<li>
+							<div class="collapsible-header"><i class="material-icons">arrow_drop_down</i>Create A New Group</div>
+							<div class="collapsible-body">
+								<span>
+									<figure>
+										<img src="media/claris/ug_createGroup_1.png" class="responsive-img materialboxed" />
+									</figure>
+								</span>
+							</div>
+						</li>
+
+						<li>
+							<div class="collapsible-header"><i class="material-icons">arrow_drop_down</i>Add To Group</div>
+							<div class="collapsible-body">
+								<span>
+									<figure>
+										<img src="media/claris/ug_addToG_1.png" class="responsive-img materialboxed" />
+									</figure>
+									<figure>
+										<img src="media/claris/ug_addToG_2.png" class="responsive-img materialboxed" />
+									</figure>
+									<figure>
+										<img src="media/claris/ug_addToG_3.png" class="responsive-img materialboxed" />
+									</figure>
+								</span>
+							</div>
+						</li>
+
+						<li>
+							<div class="collapsible-header"><i class="material-icons">arrow_drop_down</i>Group Tab Behavior</div>
+							<div class="collapsible-body">
+								<span>
+									<figure>
+										<img src="media/claris/ug_gTab_1.png" class="responsive-img materialboxed" />
+									</figure>
+									<figure>
+										<img src="media/claris/ug_gTab_2.png" class="responsive-img materialboxed" />
+									</figure>
+									<figure>
+										<img src="media/claris/ug_gTab_3.png" class="responsive-img materialboxed" />
+									</figure>
+									<figure>
+										<img src="media/claris/ug_gTab_4.png" class="responsive-img materialboxed" />
+									</figure>
+									<figure>
+										<img src="media/claris/ug_gTab_5.png" class="responsive-img materialboxed" />
+									</figure>
+									<figure>
+										<img src="media/claris/ug_gTab_6.png" class="responsive-img materialboxed" />
+									</figure>
+								</span>
+							</div>
+						</li>
+					</ul>
 				</div>
 			</div>
 
-			<div class="row">
-				<div class="col s12 center-align">
-					<h5>Drag &amp; Drop</h5>
+			<div class="row container">
+				<div class="col s12">
+					<div class="divider">
+
+					</div>
 				</div>
 			</div>
 
-			<div class="row">
-				<div class="col s12">
-					<figure>
-						<img src="media/claris/ug_dnd_1.png" class="responsive-img" />
-					</figure>
+			<section class="container" id="proposed-design">
+				<div class="row">
+					<div class="col s12 center-align">
+						<h4>Conclusion</h4>
+					</div>
 				</div>
-				<div class="col s12">
-					<figure>
-						<img src="media/claris/ug_dnd_2.png" class="responsive-img" />
-					</figure>
+				<div class="row">
+					<div class="col s12">
+						<p class="flow-text">After peer review and stakeholder validation, these designs were submitted to engineering for implementation and eventual release. </p>
+					</div>
 				</div>
-				<div class="col s12">
-					<figure>
-						<img src="media/claris/ug_dnd_3.png" class="responsive-img" />
-					</figure>
-				</div>
-				<div class="col s12">
-					<figure>
-						<img src="media/claris/ug_dnd_4.png" class="responsive-img" />
-					</figure>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col s12 center-align">
-					<h5>Role Selector</h5>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col s12">
-					<figure>
-						<img src="media/claris/ug_roleDropdown_1.png" class="responsive-img" />
-					</figure>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col s12 center-align">
-					<h5>Group Tags</h5>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col s12">
-					<figure>
-						<img src="media/claris/ug_gTags_1.png" class="responsive-img" />
-					</figure>
-				</div>
-				<div class="col s12">
-					<figure>
-						<img src="media/claris/ug_gTags_2.png" class="responsive-img" />
-					</figure>
-				</div>
-				<div class="col s12">
-					<figure>
-						<img src="media/claris/ug_gTags_3.png" class="responsive-img" />
-					</figure>
-				</div>
-				<div class="col s12">
-					<figure>
-						<img src="media/claris/ug_gTags_4.png" class="responsive-img" />
-					</figure>
-				</div>
-				<div class="col s12">
-					<figure>
-						<img src="media/claris/ug_gTags_5.png" class="responsive-img" />
-					</figure>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col s12 center-align">
-					<h5>Status Tooltip</h5>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col s12">
-					<figure>
-						<img src="media/claris/ug_tooltip_1.png" class="responsive-img" />
-					</figure>
-				</div>
-				<div class="col s12">
-					<figure>
-						<img src="media/claris/ug_tooltip_2.png" class="responsive-img" />
-					</figure>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col s12 center-align">
-					<h5>Sorting Behavior</h5>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col s12">
-					<figure>
-						<img src="media/claris/ug_sorting_1.png" class="responsive-img" />
-					</figure>
-				</div>
-				<div class="col s12">
-					<figure>
-						<img src="media/claris/ug_sorting_2.png" class="responsive-img" />
-					</figure>
-				</div>
-				<div class="col s12">
-					<figure>
-						<img src="media/claris/ug_sorting_3.png" class="responsive-img" />
-					</figure>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col s12 center-align">
-					<h5>Add New User</h5>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col s12">
-					<figure>
-						<img src="media/claris/ug_newUser_1.png" class="responsive-img" />
-					</figure>
-				</div>
-				<div class="col s12">
-					<figure>
-						<img src="media/claris/ug_newUser_2.png" class="responsive-img" />
-					</figure>
-				</div>
-				<div class="col s12">
-					<figure>
-						<img src="media/claris/ug_newUser_3.png" class="responsive-img" />
-					</figure>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col s12 center-align">
-					<h5>Create New Group</h5>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col s12">
-					<figure>
-						<img src="media/claris/ug_createGroup_1.png" class="responsive-img" />
-					</figure>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col s12 center-align">
-					<h5>Add To Group</h5>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col s12">
-					<figure>
-						<img src="media/claris/ug_addToG_1.png" class="responsive-img" />
-					</figure>
-				</div>
-				<div class="col s12">
-					<figure>
-						<img src="media/claris/ug_addToG_2.png" class="responsive-img" />
-					</figure>
-				</div>
-				<div class="col s12">
-					<figure>
-						<img src="media/claris/ug_addToG_3.png" class="responsive-img" />
-					</figure>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col s12 center-align">
-					<h5>Group Page</h5>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col s12">
-					<figure>
-						<img src="media/claris/ug_gTab_1.png" class="responsive-img" />
-					</figure>
-				</div>
-				<div class="col s12">
-					<figure>
-						<img src="media/claris/ug_gTab_2.png" class="responsive-img" />
-					</figure>
-				</div>
-				<div class="col s12">
-					<figure>
-						<img src="media/claris/ug_gTab_3.png" class="responsive-img" />
-					</figure>
-				</div>
-				<div class="col s12">
-					<figure>
-						<img src="media/claris/ug_gTab_4.png" class="responsive-img" />
-					</figure>
-				</div>
-				<div class="col s12">
-					<figure>
-						<img src="media/claris/ug_gTab_5.png" class="responsive-img" />
-					</figure>
-				</div>
-				<div class="col s12">
-					<figure>
-						<img src="media/claris/ug_gTab_6.png" class="responsive-img" />
-					</figure>
-				</div>
-			</div>
+			</section>
 
 			<div class="row">
 				<div class="col s12">

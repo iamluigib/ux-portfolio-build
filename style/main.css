@@ -121,7 +121,7 @@ div.spacer-lg {
 
 div.divider {
   border-bottom: 1px solid #eaeaea;
-  margin: 10vh auto;
+  margin: 5vh auto;
 }
 
 figure {
@@ -136,6 +136,45 @@ figcaption {
   font-style: italic;
   text-align: center;
   color: #a9a9a9;
+}
+
+.collapsible {
+  border-radius: 12px;
+  box-shadow: none;
+}
+.collapsible .collapsible-header {
+  border-radius: 12px;
+}
+.collapsible .collapsible-body {
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.btn {
+  height: 40px;
+  color: black;
+  background-color: #eaeaea;
+  font-weight: 600;
+  padding: 1px 40px;
+  border-radius: 100px;
+  box-shadow: none;
+}
+.btn:hover {
+  color: black;
+  background-color: #adadad;
+  box-shadow: none;
+}
+
+.card-panel a {
+  transition: ease-in-out 0.2s;
+}
+.card-panel a:hover {
+  color: #0c82bc;
+  transition: ease-in-out 0.2s;
+}
+
+.materialboxed {
+  margin-bottom: 10px;
 }
 
 /********
@@ -182,7 +221,7 @@ figcaption {
   content: "";
   position: absolute;
   height: 100%;
-  border: 1px solid #eaeaea;
+  border: 2px solid rgb(245, 245, 245);
   right: 40px;
   top: 0;
 }
@@ -202,8 +241,9 @@ figcaption {
 }
 
 .timeline__item {
+  background-color: rgb(245, 245, 245);
   padding: 1rem;
-  border: 2px solid #eaeaea;
+  border: 2px solid rgb(245, 245, 245);
   border-radius: 12px;
   position: relative;
   margin: 1rem 3rem 1rem 1rem;
@@ -217,7 +257,7 @@ figcaption {
   right: -10px;
   top: calc(50% - 10px);
   border-style: solid;
-  border-color: #eaeaea #eaeaea transparent transparent;
+  border-color: rgb(245, 245, 245) rgb(245, 245, 245) transparent transparent;
   border-width: 10px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -234,7 +274,7 @@ figcaption {
   .timeline__item:nth-of-type(2n):before {
     right: auto;
     left: -10px;
-    border-color: transparent transparent #eaeaea #eaeaea;
+    border-color: transparent transparent rgb(245, 245, 245) rgb(245, 245, 245);
   }
 }
 
@@ -243,7 +283,7 @@ figcaption {
   max-width: 150px;
   margin: 0 48px 0 auto;
   font-size: 1.5rem;
-  background-color: #fff;
+  background-color: white;
   line-height: 1;
   border: none;
   padding: 0.5rem 1rem 1rem;
@@ -282,25 +322,3 @@ figcaption {
 /******************
   USER MANAGEMENT
 ******************/
-.btn {
-  height: 40px;
-  color: black;
-  background-color: #eaeaea;
-  font-weight: 600;
-  padding: 1px 40px;
-  border-radius: 100px;
-  box-shadow: none;
-}
-.btn:hover {
-  color: black;
-  background-color: #adadad;
-  box-shadow: none;
-}
-
-.card-panel a {
-  transition: ease-in-out 0.2s;
-}
-.card-panel a:hover {
-  color: #0c82bc;
-  transition: ease-in-out 0.2s;
-}
