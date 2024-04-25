@@ -69,15 +69,26 @@ h1 {
 }
 
 h6 {
-  font-weight: 300;
+  color: #777;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 400;
 }
 
 p {
-  font-size: 1.1rem;
+  color: #424242;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.05rem;
+  font-weight: 400;
+}
+
+.larger-text {
+  font-size: 1.5rem;
 }
 
 .flow-text {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .card {
@@ -88,10 +99,17 @@ p {
   border-radius: 16px;
 }
 .card .card-title {
+  font-size: 2rem;
   font-weight: 600;
 }
 .card .card-title.truncate {
   font-size: 1.25rem;
+}
+.card .card-content p {
+  margin-bottom: 1rem;
+}
+.card .card-reveal {
+  border-radius: 16px;
 }
 .card .btn {
   background-color: white;
@@ -150,11 +168,17 @@ figcaption {
 .collapsible {
   border-radius: 12px;
   box-shadow: none;
+  color: #424242;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.05rem;
+  font-weight: 400;
 }
 .collapsible .collapsible-header {
   border-radius: 12px;
 }
 .collapsible .collapsible-body {
+  background-color: white;
   border-bottom-right-radius: 12px;
   border-bottom-left-radius: 12px;
 }
@@ -205,8 +229,7 @@ figcaption {
 }
 .hoverable:hover {
   transition: 0.2s ease-in-out;
-  -webkit-transform: translate(0, -5px);
-          transform: translate(0, -5px);
+  transform: translate(0, -5px);
 }
 
 .chip {
@@ -287,8 +310,7 @@ figcaption {
   border-style: solid;
   border-color: rgb(245, 245, 245) rgb(245, 245, 245) transparent transparent;
   border-width: 10px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 @media screen and (min-width: 700px) {
   .timeline__item {
@@ -351,7 +373,7 @@ figcaption {
   ABOUT
 ********/
 #about-hero {
-  margin-top: 15vh;
+  margin-top: 5vh;
 }
 @media only screen and (max-width: 600px) {
   #about-hero {
